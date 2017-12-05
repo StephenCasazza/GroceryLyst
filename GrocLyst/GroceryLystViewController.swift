@@ -37,6 +37,7 @@ class GroceryLystViewController: UIViewController {
         authUI?.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
+        navigationItem.title = "GroceryLyst"
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -169,6 +170,9 @@ class GroceryLystViewController: UIViewController {
             }
         }
     }
+    @objc func segueToAboutVC() {
+        performSegue(withIdentifier: "AboutSegue", sender: nil)
+    }
     
     //MARK:- IBActions
     @IBAction func unwindFromDetail(segue: UIStoryboardSegue) {
@@ -223,7 +227,7 @@ extension GroceryLystViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = groceryItem[indexPath.row].name + " - " + groceryItem[indexPath.row].quantity
-        cell.detailTextLabel?.text = groceryItem[indexPath.row].postingUserID
+        cell.detailTextLabel?.text = groceryItem[indexPath.row].notes
         return cell
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {

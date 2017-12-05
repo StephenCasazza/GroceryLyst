@@ -12,7 +12,6 @@ class DetailViewController: UIViewController {
     
 
     @IBOutlet weak var itemTextField: UITextField!
-    
     @IBOutlet weak var quantityLabel: UILabel!
     @IBOutlet weak var notesTextView: UITextView!
     @IBOutlet weak var stepperValue: UIStepper!
@@ -44,7 +43,11 @@ class DetailViewController: UIViewController {
             saveButton.isEnabled = false
         }
         itemTextField.becomeFirstResponder()
-
+        if itemTextField.text == "" {
+            navigationItem.title = "New Item"
+        } else {
+            navigationItem.title = "Edit Item"
+        }
     }
     
     

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		21466C4184D9372C1FE7838C /* Pods_GrocLyst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714B77D366B3A4AD46F0CF6D /* Pods_GrocLyst.framework */; };
+		93F9A6B31FD65E210072C03B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F9A6B21FD65E210072C03B /* AboutViewController.swift */; };
 		93FC97101FCE10B000804D64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FC970F1FCE10B000804D64 /* AppDelegate.swift */; };
 		93FC97151FCE10B000804D64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FC97131FCE10B000804D64 /* Main.storyboard */; };
 		93FC97171FCE10B000804D64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FC97161FCE10B000804D64 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		078F42E618821FCE8B375D2F /* Pods-GrocLyst.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrocLyst.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrocLyst/Pods-GrocLyst.debug.xcconfig"; sourceTree = "<group>"; };
 		0B2D77BACE8E08FCB32FF2D1 /* Pods-GrocLyst.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrocLyst.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrocLyst/Pods-GrocLyst.release.xcconfig"; sourceTree = "<group>"; };
 		714B77D366B3A4AD46F0CF6D /* Pods_GrocLyst.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrocLyst.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F9A6B21FD65E210072C03B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		93FC970C1FCE10B000804D64 /* GrocLyst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrocLyst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FC970F1FCE10B000804D64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93FC97141FCE10B000804D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				93FC97271FCE222B00804D64 /* UINavigationBarColorChange.swift */,
 				93FC97211FCE111700804D64 /* GroceryLystViewController.swift */,
 				93FC97251FCE18FF00804D64 /* DetailViewController.swift */,
+				93F9A6B21FD65E210072C03B /* AboutViewController.swift */,
 				93FC97131FCE10B000804D64 /* Main.storyboard */,
 				93FC97161FCE10B000804D64 /* Assets.xcassets */,
 				93FC97181FCE10B000804D64 /* LaunchScreen.storyboard */,
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F9A6B31FD65E210072C03B /* AboutViewController.swift in Sources */,
 				93FC97221FCE111700804D64 /* GroceryLystViewController.swift in Sources */,
 				93FC97241FCE121900804D64 /* GroceryItem.swift in Sources */,
 				93FC97101FCE10B000804D64 /* AppDelegate.swift in Sources */,
